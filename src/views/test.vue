@@ -29,7 +29,7 @@
   import Gcid from '../utils/gcid.worker?worker'
   import * as Comlink from 'comlink'
   import {  NUpload, UploadFileInfo, NUploadDragger, NUploadFileList, NIcon, NP, NText } from 'naive-ui'
-  import { ref } from '@vue/reactivity'
+  import { ref } from 'vue'
   import http from '../utils/axios'
   import OSS from 'ali-oss'
   import { useRoute } from 'vue-router'

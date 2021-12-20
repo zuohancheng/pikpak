@@ -56,7 +56,7 @@
 </template>
 
 <script setup lang='ts'>
-import { ref } from '@vue/reactivity';
+import { ref } from 'vue';
 import { NForm, NFormItem, NInput, NButton, useMessage, NCheckbox, useDialog, NTooltip, NIcon, NSpace } from 'naive-ui'
 import http from '../utils/axios'
 import { useRouter } from 'vue-router'

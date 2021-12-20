@@ -87,8 +87,8 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from '@vue/reactivity';
-import { h, onMounted, watch } from '@vue/runtime-core';
+import { ref } from 'vue';
+import { h, onMounted, watch } from 'vue';
 import { NLayout, NLayoutSider, NLayoutContent, NMenu, MenuOption, NIcon, NProgress, NText, NModal, NCard, NInput, NButton, NScrollbar, NTime, NTooltip, useDialog } from 'naive-ui'
 import { File, Trash, CircleX, Logout, Settings, Share, Video, Camera } from '@vicons/tabler'
 import http from '../../utils/axios'

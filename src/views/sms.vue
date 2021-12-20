@@ -54,12 +54,12 @@
 </template>
 
 <script setup lang='ts'>
-import { ref } from '@vue/reactivity';
+import { ref } from 'vue';
 import { NForm, NFormItem, NInput, NButton, useMessage, NAlert, useDialog, NTooltip, NIcon, NInputGroup, FormRules, NCheckbox, NSpace } from 'naive-ui'
 import http from '../utils/axios'
 import { useRouter } from 'vue-router'
 import { BrandGoogle, Mail } from '@vicons/tabler'
-import {  onUnmounted } from '@vue/runtime-core'
+import {  onUnmounted } from 'vue'
 import {sendCode as sendCodeApi, register as registerApi} from '@/api/user'
 import axios from 'axios'
 const loginData = ref({

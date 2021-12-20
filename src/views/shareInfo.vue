@@ -59,8 +59,6 @@
 </template>
 
 <script setup lang="ts">
-import { computed, ref } from '@vue/reactivity'
-import { h, onMounted, watch } from '@vue/runtime-core'
 import axios, { AxiosResponse } from 'axios'
 import { NInput, NInputGroup, NButton, NForm, NText, NFormItem, NScrollbar, NDataTable, NSpin, NSpace, NIcon, NEmpty, DataTableColumns, NTime, NEllipsis, NBreadcrumb, NBreadcrumbItem } from 'naive-ui'
 import { useRoute, useRouter } from 'vue-router'
@@ -68,6 +66,7 @@ import streamSaver from 'streamsaver'
 import http from '../utils/axios'
 import { FileAnalytics } from '@vicons/tabler'
 import { byteConvert } from '../utils'
+import { computed, h, onMounted, ref, watch } from 'vue'
 
 const route = useRoute()
 const router = useRouter()
@@ -94,7 +93,8 @@ const password = ref('')
 const checkedRowKeys = ref<string[]>([])
 const fileList = ref<any[]>([])
 const ancestorId = ref('')
-const columns = ref<DataTableColumns>([
+const columns = ref<DataTableColumns>()
+columns.value = [
   {
     type: 'selection'
   },
@@ -175,7 +175,7 @@ const columns = ref<DataTableColumns>([
       ]
     })
   }
-])
+]
 const getInfo = () => {
   if(shareInfo.value?.share_status !== 'OK' && route.query.id) {
     return router.push({

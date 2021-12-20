@@ -43,8 +43,8 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from '@vue/reactivity';
-import { h, onMounted } from '@vue/runtime-core'
+import { ref } from 'vue';
+import { h, onMounted } from 'vue'
 import http from '../utils/axios'
 import { DataTableColumns, NDataTable, NTime, NEllipsis, NBreadcrumb, NBreadcrumbItem, NSpace, NText, NPopconfirm, NIcon, NTooltip, NScrollbar, NSpin } from 'naive-ui'
 import { byteConvert } from '../utils'

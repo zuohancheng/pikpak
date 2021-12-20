@@ -79,8 +79,8 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from '@vue/reactivity';
-import { onMounted } from '@vue/runtime-core';
+import { ref } from 'vue';
+import { onMounted } from 'vue';
 import http from '../utils/axios'
 import { NForm, NFormItem, NButton, NInput, NCollapse, NCollapseItem, NSpace, NSwitch, useDialog, NAlert, NLog, NIcon } from 'naive-ui'
 import { ZoomQuestion } from '@vicons/tabler'

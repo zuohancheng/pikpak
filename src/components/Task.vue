@@ -52,8 +52,8 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from '@vue/reactivity';
-import { onMounted, onUnmounted, watch } from '@vue/runtime-core'
+import { ref } from 'vue';
+import { onMounted, onUnmounted, watch } from 'vue'
 import http from '../utils/axios'
 import { NEllipsis, NScrollbar, NProgress, NIcon, NPopconfirm, NSpin } from 'naive-ui'
 import { byteConvert } from '../utils'

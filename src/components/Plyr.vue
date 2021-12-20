@@ -9,8 +9,8 @@
   </audio>
 </template>
 <script setup lang="ts">
-import { computed, ref } from '@vue/reactivity';
-import { onMounted } from '@vue/runtime-core';
+import { computed, ref } from 'vue';
+import { onMounted } from 'vue';
 import Plyr from 'plyr'
 import 'plyr/dist/plyr.css'
   const props = defineProps<{

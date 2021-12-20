@@ -26,8 +26,8 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from '@vue/reactivity'
-import { h, onMounted } from '@vue/runtime-core'
+import { ref } from 'vue'
+import { h, onMounted } from 'vue'
 import { DataTableColumns, NDataTable, NText, NTime, NAlert, NSpace, NScrollbar, NSpin, NIcon } from 'naive-ui'
 import { ZoomQuestion } from '@vicons/tabler'
 import http, { notionHttp } from '../utils/axios'

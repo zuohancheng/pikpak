@@ -2,8 +2,8 @@
   <div ref="dplayerRef"></div>
 </template>
 <script setup lang="ts">
-import { ref } from '@vue/reactivity';
-import { onMounted, onUnmounted } from '@vue/runtime-core';
+import { ref } from 'vue';
+import { onMounted, onUnmounted } from 'vue';
 import DPlayer from 'dplayer'
   const props = defineProps<{
     video: {}
